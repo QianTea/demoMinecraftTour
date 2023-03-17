@@ -7,12 +7,7 @@
 	    <link rel="stylesheet" href="styles/normalize.css">
 	    <link rel="stylesheet" type="text/css" href="styles/main.css">
 	    <link rel="stylesheet" type="text/css" href="styles/feedback.css">
-<script>
-function load()
-{
-	alert("页面已经载入！");
-}
-</script>
+
 	</head>
 
 	<body>
@@ -100,8 +95,8 @@ function load()
 					<fieldset id="buttons">
 						<legend>Submit Your Feedback</legend>
 						<label>&nbsp;</label>
-						<input type="submit" id="submit" name="Submit">
-						<input type="reset" id="reset" value="Reset Fields"><br>
+						<button type="submit" id="submit">Submit</button>
+						<button type="button" id="reset">Reset Fields</button><br>
 					</fieldset>
 
 				</form>
@@ -110,19 +105,13 @@ function load()
 		</main>
 
 		<aside id="right">
-			<h4>Which do you think MC Guide did good:</h4>
-			<form>
-				<input type="checkbox" name="fb" value="color">color<br>
-				<input type="checkbox" name="fb" value="design">design<br>
-				<input type="checkbox" name="fb" value="link">link<br>
-				<input type="checkbox" name="fb" value="information">information<br>
-			</form>
-
-			<h4>Will you visit again?</h4>
-			<form>
-				<input type="radio" name="f" value="yes">yes<br>
-				<input type="radio" name="f" value="no">no<br>
-			</form>
+			<h3> &nbsp;External Links</h3>
+			<ul>
+				<li><a href="https://www.minecraft.net/en-us" target="_blank">Official Web</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank">Wikipedia</a></li>
+				<li><a href="https://classic.minecraft.net/?join=jagkku2RHN5HmX4Y" target="_blank">MC Classic</a></li>
+	
+			</ul>
 		</aside>
 			
 
@@ -131,4 +120,14 @@ function load()
 	        </footer>
 
 	</body>
+	<script>
+		const feedbackForm = document.querySelector('#registration_form');
+		const resetBtn = document.querySelector('#reset');
+	  
+
+		// 点击 Reset Fields 按钮时，将表单重置
+		resetBtn.addEventListener('click', () => {
+		  feedbackForm.reset();
+		});
+	  </script>
 </html>

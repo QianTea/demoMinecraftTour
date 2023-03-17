@@ -193,27 +193,40 @@ main {
 }
 
 /*RIGHT NAV*/
+/* Right aside styles */
 #right {
-    width: 180px;
-    height: 650px;     /* to give the sidebar some height                           for its border */
-    float: right;
-    padding-top: 20px;
-    padding-left: 10px;
-/*    border-left: 2px solid #ef9c00; 
-*/    background-color: rgba(181, 217, 181,0.5);
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
-#right h3{
-	font-size: 1.5em;
+
+#right h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
-#right li{
-	padding-top: 5px;
+
+#right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-#right a{
-	color: white;
+
+#right li {
+  margin-bottom: 10px;
 }
-#right a:hover{
-	color: #34AA2F;
+
+#right a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
 }
+
+#right a:hover {
+  color: #007bff;
+}
+
 
 
 /* Footer */
