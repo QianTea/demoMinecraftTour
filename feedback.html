@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Minecraft Guide|Feedback</title>
+		<link rel="icon" type="image/ico" href="images/favicon.png">
+	    <link rel="stylesheet" href="styles/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="styles/main.css">
+	    <link rel="stylesheet" type="text/css" href="styles/feedback.css">
+<script>
+function load()
+{
+	alert("页面已经载入！");
+}
+</script>
+	</head>
+
+	<body>
+		<header>
+			<a href="home.html"><img src="images/logo.png" alt="logo" width="340" height="70"></a>
+	        <h3>Tell us how we did today!</h3>
+		</header>
+
+		<nav>
+			<ul class="nav1">
+				<li><a href="home.html">Home</a></li>
+				<li>
+					<a href="images.html">Images</a>
+					<ul class="nav2">
+						<li><a href="#">Gameplay</a></li>
+						<li><a href="#">BossMobs</a>
+							<ul class="nav3">
+								<li><a href="#">Ender dragon</a></li>
+								<li><a href="#">Wither</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="video.html">Video</a></li>
+				<li style="float: right;"><a class="contact" href="feedback.html">Feedback</a></li> 
+			</ul>
+		</nav>
+
+		<aside id="left">
+			<h3> &nbsp; &nbsp;MC Tour</h3>
+	        <ul>
+	            <li><a href="home.html"><img src="images/icons8-minecraft_log.png" alt="home" height="70" width="70"><br>&nbsp;&nbsp;&nbsp;Home</a></li>
+	            <li><a href=""><img src="images/icons8-minecraft_pic.png" alt="mods" height="70" width="70"><br>&nbsp;&nbsp;&nbsp;MODs</a></li>
+	            <li><a href=""><img src="images/icons8-minecraft_zom.png" alt="bossmobs" height="70" width="70"><br>BossMobs</a></li>
+	            <li><a href=""><img src="images/icons8-minecraft_swo.png" alt="gameplay" height="70" width="70"><br>Gameplay</a></li>
+	        </ul>
+		</aside>
+
+		<main>
+            <article>
+            	<h2>Feedback Page</h2>
+				<form action="register_account.html" method="get" id="registration_form"> 
+					
+					<fieldset>
+						<legend>Contact Information</legend>
+						<label for="name">Name:</label>
+						<input type="text" name="name"id="name"  required><br>
+
+						<label for="email">Email:</label>
+						<input type="email" name="email" autofocus required><br>
+						<label for="address">Address:</label>
+						<input type="text" name="address" id="address"><br>  
+					</fieldset>	
+
+					<fieldset>
+						<legend>MC Experience</legend>
+
+						<label for="Experience">Did you played MC:</label>
+						<select name="Experience" id="Experience">
+							<option value="n">Never Before</option>
+							<option value="y">Yes</option><br>
+						</select>
+
+						<label for="membership_type">Which mod do you like:</label>
+						<select name="membership_type" id="membership_type">
+							<option value="e">Creative </option>
+							<option value="l">Survival  </option>
+							<option value="r">Spectator </option>
+						</select>
+
+						<label for="mob">Favorite animal:</label><br>
+						<form>
+							<input type="checkbox" name="mob" value="wolf">wolf<br>
+							<input type="checkbox" name="mob" value="cat">cat<br>
+							<input type="checkbox" name="mob" value="panda">panda<br>
+							<input type="checkbox" name="mob" value="pig">pig<br>
+						</form>
+					</fieldset>
+
+					<fieldset>
+						<legend>What else can we improve</legend>
+						<textarea rows="10" cols="60">Please enter your comments here...</textarea>
+					</fieldset>		
+						
+					<fieldset id="buttons">
+						<legend>Submit Your Feedback</legend>
+						<label>&nbsp;</label>
+						<input type="submit" id="submit" name="Submit">
+						<input type="reset" id="reset" value="Reset Fields"><br>
+					</fieldset>
+
+				</form>
+			</article>
+
+		</main>
+
+		<aside id="right">
+			<h4>Which do you think MC Guide did good:</h4>
+			<form>
+				<input type="checkbox" name="fb" value="color">color<br>
+				<input type="checkbox" name="fb" value="design">design<br>
+				<input type="checkbox" name="fb" value="link">link<br>
+				<input type="checkbox" name="fb" value="information">information<br>
+			</form>
+
+			<h4>Will you visit again?</h4>
+			<form>
+				<input type="radio" name="f" value="yes">yes<br>
+				<input type="radio" name="f" value="no">no<br>
+			</form>
+		</aside>
+			
+
+			<footer> 
+	            <p>Copyright 2020 - minecraftguide.com</p>
+	        </footer>
+
+	</body>
+</html>
